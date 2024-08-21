@@ -1,0 +1,117 @@
+1. This Code will Remove Contact form No Input Side up Down Arrow
+
+    input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+2. This Code is For Read More and Read Less functionlaity
+
+Read More Fulll Code 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .example::-webkit-scrollbar {
+            display: none;
+        }
+
+        .example {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        body {
+            font-family: 'Open Sans', arial, sans-serif;
+        }
+
+        #more {
+            display: none;
+        }
+
+        p {
+
+            font-size: 20px !important;
+            line-height: inherit;
+            font-weight: 700;
+        }
+
+        button#myBtn {
+            padding: 8px 20px;
+            background: black;
+            color: white;
+            border-radius: 5px;
+            transition: .3s ease;
+        }
+        h3{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+      <h3>Read More/Read Less Functionality</h3>
+        <p> <strong class="x-el x-el-span c1-2s c1-2t c1-b c1-6q c1-32 c1-43 c1-8q">Negotiated settlement is always
+                available and the early identification and mitigation of legal, financial and other risks arising from
+                disputes saves costs and management time. However, there may come a time when informal or facilitated
+                negotiations fail to build consensus in a dispute situation. This is usually the point at which the
+                parties start to consider which alternative dispute resolution (ADR) process best suits their particular
+                situation and which options are open to them.<span id="dots">...</span></strong></p>
+    </div>
+    <div id="more">
+
+        Here the content will come that u wanna show after click button
+       
+    </div>
+
+
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+Bootstrap Col grid system and Col- responsive queries
+
+Col - 12 of full width .
+
+Divide it to into your need.
+
+Like first col is col-8 and second is col-4 now the sum of the 12 is fill and this is Done and this is simple Now see the responsive layout
+
+Col varients
+
+This col works is the responsive breakpoints of screen like this.
+
+XS  : 0px to 576px
+MD  : 576px to 768px
+LG  : 768px to 992px
+XL  : 992px to 1200px 
+XXL : 1200px to 1400px 
+
+Now Lets's Grind....
+
